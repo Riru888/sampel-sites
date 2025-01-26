@@ -1,0 +1,131 @@
+body {
+   background-color: rgb(66, 66, 66);
+   margin: 0;
+   padding: 0;
+}
+.Beijing {
+   height: 100vh;
+   width: 100%;
+   overflow: hidden;
+   display: flex;
+   position: relative;
+}
+.Beijing video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+   width: 100%;
+   height: 100vh;
+   object-fit: cover;
+}
+.effects {
+   position: absolute;
+   object-fit: cover;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   width: 100%;
+   height: 100vh;
+   background-color: rgba(219, 208, 208, 0.432);
+}
+.back {
+   position: absolute;
+   z-index: 3;
+   top: 2%;
+   left: 15px;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 25px;
+   color: white;
+   text-decoration: none;
+}
+.texttittle h1 {
+   position: absolute;
+   top: 1%;
+   right: 15px;
+   font-size: 25px;
+   font-family: 'Times New Roman', Times, serif;
+   color: rgb(255, 255, 255);
+   z-index: 3;
+   text-align: right;
+}
+.paragraph1 {
+   position: absolute;
+   top: 125px;
+   right: 25px;
+   left: 25px;
+   font-size: 14;
+   font-family: 'Times New Roman', Times, serif;
+   color: rgb(0, 0, 0);
+   z-index: 3;
+   text-align: left;
+}
+.characteristics {
+   position: absolute;
+   top: 340px;
+   right: 975px;
+   left: 25px;
+   white-space: nowrap;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-size: 14;
+   font-family: 'Times New Roman', Times, serif;
+   color: rgb(0, 0, 0);
+   z-index: 3;
+   text-align: left;
+}
+.white {
+   position: fixed;
+   top: 0%;
+   background-color: white;
+   z-index: 2;
+   height: 175px;
+   width: 100%;
+}
+.white1 {
+   position: fixed;
+   bottom: 0%;
+   background-color: white;
+   z-index: 2;
+   height: 275px;
+   width: 100%;
+}
+.black {
+   position: fixed;
+   top: 0%;
+   background-color: rgb(66, 66, 66);
+   z-index: 2;
+   height: 60px;
+   width: 100%;
+}
+.black2{
+   position: fixed;
+   bottom: 0%;
+   background-color: rgb(66, 66, 66);
+   z-index: 3;
+   height: 40px;
+   width: 100%;
+}
+.support {
+   position: relative;
+   font-size: 9;
+   color: white;
+}
+.suppmail {
+   position: relative;
+   font-size: 9;
+   color: white;
+}
+.button {
+   height: 80px;
+   width: 180px;
+   position: absolute;
+   bottom: 8%;
+   right: 2%;
+   background-color: rgb(66, 66, 66);
+   z-index: 3;
+   color: white;
+   cursor: pointer;
+}
+

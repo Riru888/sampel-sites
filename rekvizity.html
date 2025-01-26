@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="rekvizity.css">
+      <title>Ввод реквизитов</title>
+   </head>
+   <body>
+      <div class="texttittle"><h8>Введите реквизиты для покупки билета</h8></div>
+      <h0 class="back"><a href="karta.html" class="back">Назад</a></h0>
+      <div class="rekvizity">
+         <video src="rekvizity_video.mp4" type="video/mp4" autoplay muted loop></video>
+         <div class="effects"></div>
+         <div class="black"></div>
+         <div class="black2"></div>
+         <div class="rekvizity-form">
+            <form action="submit_rekvizity.html" method="post">
+               <div class="form-field">
+                  <label for="full-name">ФИО:</label>
+                  <input type="text" id="full-name" name="full-name" placeholder="Введите ваше ФИО" required>
+               </div>
+               <div class="form-field">
+                  <label for="age">Возраст:</label>
+                  <input type="number" id="age" name="age" placeholder="Введите ваш возраст" required>
+               </div>
+               <div class="form-field">
+                  <label for="children">Наличие или отсутствие медицинских противопоказаний:</label>
+                  <input type="text" id="health" name="health" placeholder="Введите количество детей" min="0" required>
+               </div>
+               <div class="form-field">
+                  <label for="children">Количество детей(Для детей старше шести лет места приобретются отдельно):</label>
+                  <input type="number" id="children" name="children" placeholder="Введите количество детей" min="0" required>
+               </div>
+               <div class="form-field">
+                  <label for="card-number">Номер карты:</label>
+                  <input type="text" id="card-number" name="card-number" placeholder="Введите номер карты" required>
+               </div>
+               <div class="form-field">
+                  <label for="expiry-date">Срок действия:</label>
+                  <input type="month" id="expiry-date" name="expiry-date" required>
+               </div>
+               <div class="form-field">
+                  <label for="cvv">CVV:</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="Введите CVV" required>
+               </div>
+               <div class="form-field">
+                  <label for="passport">Номер паспорта:</label>
+                  <input type="text" id="passport" name="passport" placeholder="Введите номер паспорта" required>
+               </div>
+
+               <div class="form-submit">
+                  <button type="submit" class="button">Заказать билет</button>
+               </div>
+            </form>
+         </div>
+         <div class="layout">
+   <div class="plane-container">
+      <h2>Выберите место на самолёте</h2>
+      <div class="plane">
+         <div class="row">
+            <button class="seat" id="A1" onclick="selectSeat('A1')">A1</button>
+            <button class="seat" id="A2" onclick="selectSeat('A2')">A2</button>
+            <button class="seat" id="A3" onclick="selectSeat('A3')">A3</button>
+            <div class="aisle"></div>
+            <button class="seat" id="A4" onclick="selectSeat('A4')">A4</button>
+            <button class="seat" id="A5" onclick="selectSeat('A5')">A5</button>
+            <button class="seat" id="A6" onclick="selectSeat('A6')">A6</button>
+         </div>
+         <div class="row">
+            <button class="seat" id="B1" onclick="selectSeat('B1')">B1</button>
+            <button class="seat" id="B2" onclick="selectSeat('B2')">B2</button>
+            <button class="seat" id="B3" onclick="selectSeat('B3')">B3</button>
+            <div class="aisle"></div>
+            <button class="seat" id="B4" onclick="selectSeat('B4')">B4</button>
+            <button class="seat" id="B5" onclick="selectSeat('B5')">B5</button>
+            <button class="seat" id="B6" onclick="selectSeat('B6')">B6</button>
+         </div>
+         <div class="row">
+    <button class="seat" id="C1" onclick="selectSeat('C1')">C1</button>
+    <button class="seat" id="C2" onclick="selectSeat('C2')">C2</button>
+    <button class="seat" id="C3" onclick="selectSeat('C3')">C3</button>
+    <div class="aisle"></div>
+    <button class="seat" id="C4" onclick="selectSeat('C4')">C4</button>
+    <button class="seat" id="C5" onclick="selectSeat('C5')">C5</button>
+    <button class="seat" id="C6" onclick="selectSeat('C6')">C6</button>
+</div>
+<div class="row">
+    <button class="seat" id="D1" onclick="selectSeat('D1')">D1</button>
+    <button class="seat" id="D2" onclick="selectSeat('D2')">D2</button>
+    <button class="seat" id="D3" onclick="selectSeat('D3')">D3</button>
+    <div class="aisle"></div>
+    <button class="seat" id="D4" onclick="selectSeat('D4')">D4</button>
+    <button class="seat" id="D5" onclick="selectSeat('D5')">D5</button>
+    <button class="seat" id="D6" onclick="selectSeat('D6')">D6</button>
+</div>
+<div class="row">
+    <button class="seat" id="E1" onclick="selectSeat('E1')">E1</button>
+    <button class="seat" id="E2" onclick="selectSeat('E2')">E2</button>
+    <button class="seat" id="E3" onclick="selectSeat('E3')">E3</button>
+    <div class="aisle"></div>
+    <button class="seat" id="E4" onclick="selectSeat('E4')">E4</button>
+    <button class="seat" id="E5" onclick="selectSeat('E5')">E5</button>
+    <button class="seat" id="E6" onclick="selectSeat('E6')">E6</button>
+</div>
+<div class="entry">
+    <p>Вход</p>
+</div>
+<div class="row">
+    <button class="seat" id="F1" onclick="selectSeat('F1')">F1</button>
+    <button class="seat" id="F2" onclick="selectSeat('F2')">F2</button>
+    <button class="seat" id="F3" onclick="selectSeat('F3')">F3</button>
+    <div class="aisle"></div>
+    <button class="seat" id="F4" onclick="selectSeat('F4')">F4</button>
+    <button class="seat" id="F5" onclick="selectSeat('F5')">F5</button>
+    <button class="seat" id="F6" onclick="selectSeat('F6')">F6</button>
+</div>
+<div class="row">
+    <button class="seat" id="G1" onclick="selectSeat('G1')">G1</button>
+    <button class="seat" id="G2" onclick="selectSeat('G2')">G2</button>
+    <button class="seat" id="G3" onclick="selectSeat('G3')">G3</button>
+    <div class="aisle"></div>
+    <button class="seat" id="G4" onclick="selectSeat('G4')">G4</button>
+    <button class="seat" id="G5" onclick="selectSeat('G5')">G5</button>
+    <button class="seat" id="G6" onclick="selectSeat('G6')">G6</button>
+</div>
+<div class="row">
+    <button class="seat" id="H1" onclick="selectSeat('H1')">H1</button>
+    <button class="seat" id="H2" onclick="selectSeat('H2')">H2</button>
+    <button class="seat" id="H3" onclick="selectSeat('H3')">H3</button>
+    <div class="aisle"></div>
+    <button class="seat" id="H4" onclick="selectSeat('H4')">H4</button>
+    <button class="seat" id="H5" onclick="selectSeat('H5')">H5</button>
+    <button class="seat" id="H6" onclick="selectSeat('H6')">H6</button>
+</div>
+<div class="row">
+    <button class="seat" id="I1" onclick="selectSeat('I1')">I1</button>
+    <button class="seat" id="I2" onclick="selectSeat('I2')">I2</button>
+    <button class="seat" id="I3" onclick="selectSeat('I3')">I3</button>
+    <div class="aisle"></div>
+    <button class="seat" id="I4" onclick="selectSeat('I4')">I4</button>
+    <button class="seat" id="I5" onclick="selectSeat('I5')">I5</button>
+    <button class="seat" id="I6" onclick="selectSeat('I6')">I6</button>
+</div>
+<div class="row">
+    <button class="seat" id="J1" onclick="selectSeat('J1')">J1</button>
+    <button class="seat" id="J2" onclick="selectSeat('J2')">J2</button>
+    <button class="seat" id="J3" onclick="selectSeat('J3')">J3</button>
+    <div class="aisle"></div>
+    <button class="seat" id="J4" onclick="selectSeat('J4')">J4</button>
+    <button class="seat" id="J5" onclick="selectSeat('J5')">J5</button>
+    <button class="seat" id="J6" onclick="selectSeat('J6')">J6</button>
+</div>
+<div class="row">
+    <button class="seat" id="K1" onclick="selectSeat('K1')">K1</button>
+    <button class="seat" id="K2" onclick="selectSeat('K2')">K2</button>
+    <button class="seat" id="K3" onclick="selectSeat('K3')">K3</button>
+    <div class="aisle"></div>
+    <button class="seat" id="K4" onclick="selectSeat('K4')">K4</button>
+    <button class="seat" id="K5" onclick="selectSeat('K5')">K5</button>
+    <button class="seat" id="K6" onclick="selectSeat('K6')">K6</button>
+</div>
+<div class="row">
+    <button class="seat" id="L1" onclick="selectSeat('L1')">L1</button>
+    <button class="seat" id="L2" onclick="selectSeat('L2')">L2</button>
+    <button class="seat" id="L3" onclick="selectSeat('L3')">L3</button>
+    <div class="aisle"></div>
+    <button class="seat" id="L4" onclick="selectSeat('L4')">L4</button>
+    <button class="seat" id="L5" onclick="selectSeat('L5')">L5</button>
+    <button class="seat" id="L6" onclick="selectSeat('L6')">L6</button>
+</div>
+      </div>
+   </div>
+</div>
+      </div>
+      <script src="seats.js"></script>
+   </body>
+</html>
